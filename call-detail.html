@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Masters — Call Detail</title>
+<style>
+  * { margin:0;padding:0;box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f1f5f9;min-height:100vh; }
+  .header { background:linear-gradient(135deg,#1E2A5E 0%,#162040 100%);padding:40px 32px;text-align:center; }
+  .header .eyebrow { font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.5);margin-bottom:8px; }
+  .header h1 { font-size:28px;font-weight:800;color:#fff;margin-bottom:6px; }
+  .header .sub { font-size:14px;color:rgba(255,255,255,0.65); }
+  .container { max-width:960px;margin:0 auto;padding:32px 16px; }
+  .cards { display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px; }
+  @media(max-width:600px){.cards{grid-template-columns:1fr 1fr;}}
+  .card { background:#fff;border-radius:12px;padding:20px;box-shadow:0 1px 4px rgba(0,0,0,.07);text-align:center; }
+  .card .value { font-size:36px;font-weight:800;color:#1E2A5E; }
+  .card .label { font-size:12px;color:#64748b;margin-top:6px;font-weight:600; }
+  .table-wrap { background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.07); }
+  table { width:100%;border-collapse:collapse; }
+  th { background:#f8fafc;padding:12px;font-size:11px;font-weight:700;text-transform:uppercase;color:#64748b;text-align:left;letter-spacing:1px; }
+  .note { font-size:12px;color:#94a3b8;margin-top:12px;text-align:center; }
+  .footer { text-align:center;padding:32px 16px;font-size:12px;color:#94a3b8; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="eyebrow">Wright AI Labs</div>
+  <h1>Claire — Call Detail</h1>
+  <div class="sub">Weather Masters of Georgia &nbsp;·&nbsp; Last 76 Calls</div>
+</div>
+<div class="container">
+  <div class="cards">
+    <div class="card"><div class="value">76</div><div class="label">Total Calls</div></div>
+    <div class="card"><div class="value" style="color:#16a34a;">9</div><div class="label">Forwarded to Team</div></div>
+    <div class="card"><div class="value">40</div><div class="label">Completed by Claire</div></div>
+    <div class="card"><div class="value" style="color:#d97706;">11</div><div class="label">No Response</div></div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Time</th><th>Caller</th><th>Duration</th><th>Outcome</th><th>Summary</th>
+      </tr></thead>
+      <tbody><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 22, 02:41 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 49s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Andrea Wright called Weather Masters of Georgia to inquire about pricing for a replacement 2-ton HVA</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 22, 02:32 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 38s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Dennis Wright, an existing customer, called Weather Masters of Georgia inquiring about pricing for a</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 22, 02:25 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 39s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">A new customer called Weather Masters of Georgia to get a price for a new 2-ton AC unit for their ho</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 22, 02:18 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 36s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Martin Wright, a new customer, called Weather Masters of Georgia to inquire about a price quote for </td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 11:55 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 26s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Martin Wright called Weather Masters of Georgia to inquire about pricing for a new 2-ton system, as </td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 11:46 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 40s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Dennis Wright, an existing customer, called Weather Masters of Georgia to inquire about the cost of </td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044051003</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044051003</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14049310821</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14043982800</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14123359267</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14123359267</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14123359267</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 09:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14123359267</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">56s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with Weather Masters of Georgia attempting to assist a customer. However, the custome</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 09:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14123359267</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">54s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An AI from Weather Masters of Georgia attempted to contact a customer but reached a voicemail or spa</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 09:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 21s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An existing customer, Dennis Wright, called Weather Masters of Georgia. The AI successfully verified</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 01:58 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 5s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Martin Wright, a new customer, called Weather Masters of Georgia to inquire about pricing for a 2-to</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 01:15 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 22s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Martin Wright, a new customer, called Weather Masters of Georgia to inquire about pricing for a 2-to</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 01:13 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 3s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Dennis Wright, an existing customer, called Weather Masters of Georgia to inquire about pricing for </td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:55 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 13s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">A new customer called Weather Masters of Georgia to inquire about a price for a 2-ton HVAC system, s</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:43 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 35s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">A new customer called Weather Masters of Georgia to inquire about pricing for a 2-ton HVAC unit, as </td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:38 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 35s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Dennis Wright, an existing customer, called Weather Masters of Georgia to inquire about pricing for </td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:33 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 51s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Dennis Wright, an existing customer, called Weather Masters of Georgia to inquire about the price of</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:26 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">40s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An AI agent from Weather Masters of Georgia identified an existing customer, Dennis Wright, and conf</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:14 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 13s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Dennis Wright, an existing customer, called Weather Masters of Georgia to inquire about pricing for </td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:04 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">33s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An existing customer, Martin Wright, called Weather Masters of Georgia but the AI was unable to loca</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 21, 12:01 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">26s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An existing customer, Martin Wright, called Weather Masters of Georgia. The AI was unable to locate </td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 11:56 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">28s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with Weather Masters of Georgia identifying the user as an existing customer named De</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 11:54 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 29s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Martin Wright, an existing customer, called Weather Masters of Georgia but his record could not be l</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 06:01 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14043982800</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">18s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with the AI asking if the user was a new or existing customer. Despite the user's "No</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 06:00 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14049310821</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">39s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call involved an AI repeatedly asking the user to clarify if they were a new or existing custome</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 06:00 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14043982800</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">9s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI from Weather Masters of Georgia greeting the caller and asking if they wer</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16784471073</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14049062724</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14049819312</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17706097271</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16782670374</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16788235880</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044214647</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 09:01 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17066182377</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">56s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with the AI from Weather Masters of Georgia asking the caller if they were a new or e</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 09:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14704806308</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">11s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with Weather Masters of Georgia's AI asking if the caller was a new or existing custo</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;"></td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16784353349</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Customer Did Not Answer</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 09:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044051003</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">38s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with the AI asking the user if they were a new or existing customer. The user respond</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 20, 09:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044051003</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">43s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An AI from Weather Masters of Georgia answered a call, asking if the caller was a new or existing cu</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 19, 08:13 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+19319938110</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">6m 47s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Ethan Williams, a new customer, called Weather Masters of Georgia to request a quote for an HVAC rep</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 19, 12:22 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14047886000</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 42s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI attempting to identify the customer as existing and collecting their name,</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 18, 10:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16783614918</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">8s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with Weather Masters of Georgia greeting the caller and asking if they were a new or </td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 18, 10:00 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16783614918</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">12s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI from Weather Masters of Georgia greeting the caller and asking if they wer</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 17, 08:38 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14046497945</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 7s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Christie Moss, an existing customer, called Weather Masters of Georgia and provided her contact info</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 17, 08:34 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17703357333</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">33s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Cara Boba, an existing customer of Weather Masters of Georgia, called and provided her callback numb</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 17, 05:34 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16787776531</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">27s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call was answered by an automated system at Weather Masters of Georgia asking whether the caller</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 17, 04:39 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+18184891178</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 56s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Beverly Whitaker, an existing customer, called Weather Masters of Georgia to inquire about a billing</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 17, 04:12 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+13033191746</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">11s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI greeting from Weather Masters of Georgia, asking the caller if they were a</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 16, 04:21 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17706307691</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 16, 02:01 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044050930</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 16, 12:41 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17062527767</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">27s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An AI from Weather Masters of Georgia initiated the call, asking the recipient if they were a new or</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 15, 04:17 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+12155544895</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 10s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Corey Williams, an existing customer, provided their name and phone number and confirmed their email</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 15, 04:09 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+18599133016</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">—</td>
+      <td style="padding:10px 12px;"><span style="background:#94a3b8;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Call.In Progress.Error Providerfault Transport Never Connected</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;"></td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 15, 12:07 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16783147780</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">4s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call to Weather Masters of Georgia began with an AI greeting. However, the call ended abruptly a</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 15, 01:50 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16782094266</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">2m 49s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">A new customer, Dennis Diler, attempted to provide his contact information, including his name and a</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 14, 12:40 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16783147780</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">17s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">A new customer called Weather Masters of Georgia and was greeted by an AI. The AI welcomed the custo</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 13, 01:03 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16788235880</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">25s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with the AI asking if the user was a new or existing customer. The user's responses w</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 13, 12:21 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16788235880</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">14s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The user called Weather Masters of Georgia and immediately requested to speak with an agent. The AI </td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 13, 11:08 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+18779473639</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">15s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An AI from Weather Masters of Georgia answered a call and asked if the caller was a new or existing </td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 13, 12:04 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17706090833</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">3s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The customer called Weather Masters of Georgia but ended the call immediately after the automated gr</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 13, 12:03 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17706090833</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">8s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI from Weather Masters of Georgia greeting the caller and asking if they wer</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 12, 10:48 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16788235880</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">23s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An AI greeted a new customer calling Weather Masters of Georgia, confirming their status and asking </td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 12, 12:15 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+17739888364</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">16s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI from Weather Masters of Georgia greeting the user and asking if they were </td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 12, 11:44 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+16174051984</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">49s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Britney Berry, a new customer, called Weather Masters of Georgia. The AI agent was collecting her pe</td>
+    </tr><tr style="background:#fffbeb;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 12, 02:26 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">Internal Test</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">3m 28s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">Dennis Wright, a new customer, contacted Weather Masters of Georgia to inquire about a new AC unit f</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 11, 03:13 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14045108061</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">1m 1s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The AI answered the call and asked if the user was new or existing. The user, Robert Cummings, reque</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 10, 12:38 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14047979944</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">27s</td>
+      <td style="padding:10px 12px;"><span style="background:#d97706;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">No Response</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI from Weather Masters of Georgia greeting the caller and asking if they wer</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 09, 11:09 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+18779473639</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">15s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with Weather Masters of Georgia's AI asking if the caller was new or existing. The ca</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 09, 11:08 AM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+18779473639</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">14s</td>
+      <td style="padding:10px 12px;"><span style="background:#16a34a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Forwarded</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">An AI from Weather Masters of Georgia answered a call and asked if the caller was a new or existing </td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 08, 10:51 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044057104</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">13s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI from Weather Masters of Georgia greeting the caller and asking if they wer</td>
+    </tr><tr style="background:#fff;border-bottom:1px solid #f1f5f9;">
+      <td style="padding:10px 12px;font-size:13px;color:#64748b;">Jun 08, 10:48 PM</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;font-weight:500;">+14044057104</td>
+      <td style="padding:10px 12px;font-size:13px;color:#334155;">11s</td>
+      <td style="padding:10px 12px;"><span style="background:#1E2A5E;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;">Completed</span></td>
+      <td style="padding:10px 12px;font-size:12px;color:#64748b;max-width:200px;">The call began with an AI from Weather Masters of Georgia greeting the caller and asking if they wer</td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="note">⚠️ Rows highlighted in yellow are internal test calls (Dennis Wright). 55 customer-facing calls total.</div>
+</div>
+<div class="footer">Wright AI Labs &mdash; Powered by Claire AI</div>
+</body>
+</html>
